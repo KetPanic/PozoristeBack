@@ -12,5 +12,5 @@ app.get('/', (req, res) => {
 
 
 app.use(express.static(path.join(__dirname, 'static')));
-app.listen( {port:8900}, async() => {
+app.listen( {port:process.env.PORT || 8900}, async() => {
 })
