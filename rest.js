@@ -177,6 +177,34 @@ app.get('/repertoire/ids', (req, res) => {
     .catch( err =>res.status(500).json({message: err}) );
 })
 
+
+Sequelize = require('sequelize');
+const Op = Sequelize.Op;
+app.get('/shows/query/:query', (req, res) => {
+    Shows.findAll( {where: {'name': { [Op.like]: `%${req.params.query}%`}}})
+    .then(rows => {
+        arr = []
+        rows.forEach(r => {
+            arr.push(r.id);
+        })
+        res.json(arr)
+    })
+    .catch( err =>res.status(500).json({message: err}) );
+})
+
+app.get('/repertoire/ids/:showId', (req, res) => {
+    console.log(req.params.showId)
+    Repertoire.findAll({where: {showId: req.params.showId}})
+    .then(rows => {
+        arr = []
+        rows.forEach(r => {
+            arr.push(r.id);
+        })
+        res.json(arr)
+    })
+    .catch( err =>res.status(500).json({message: err}) );
+})
+
 app.get('/repertoire/:id', (req, res) => {
     Repertoire.findOne( {where: {id: req.params.id, }, include:['show', 'hall']} )
     .then(repertoire => {
@@ -278,6 +306,18 @@ app.get('/reservations', (req, res) => {
 
 app.get('/reservations/:id', (req, res) => {
     Reservations.findOne( {where: {id: req.params.id}} )
+    .then(reservation => {
+        if(reservation == null){
+            res.status(400).json({message: "Desired reservation doesn't exist"})
+        }else{
+            res.json(reservation)
+        }
+    })
+    .catch( err => res.status(500).json({message: err}));
+} );
+
+app.get('/reservations/forUser/:userId', (req, res) => {
+    Reservations.findAll( {where: {userId: req.params.userId}, include: ['ticket']} )
     .then(reservation => {
         if(reservation == null){
             res.status(400).json({message: "Desired reservation doesn't exist"})
@@ -618,7 +658,8 @@ app.delete('/ticketTypes/:id', authToken, authorizelvl1, (req, res) => {
  */
 
 app.get('/comments/:id', (req, res) => {
-    Comments.findAll( {where: {showId: req.params.id}} )
+    console.log(req.params.id);
+    Comments.findAll( {where: {showId: req.params.id}, include: ['user']} )
     .then(ticketType => {
         if(ticketType == null){
             res.status(400).json({message: "Desired ticket type doesn't exist"})
@@ -703,7 +744,7 @@ app.post('/users', authToken, authorizelvl2, (req, res) => {
   } })
 })
 
-app.put('/users/:id', authToken, authorizelvl2, (req, res) => {
+app.put('/users/:id', authToken, (req, res) => {
     Joi.validate(req.body, userScheme, (error, result) => { 
         if(error){
          res.status(400).json({message: error.details});
@@ -719,13 +760,13 @@ app.put('/users/:id', authToken, authorizelvl2, (req, res) => {
  
              Users.findOne({where: {username: req.body.username}})
              .then( user => {
-                 if(user != null){
-                     res.status(400).json({ message: "Username already exists" });
+                 if(user == null){
+                     res.status(400).json({ message: "User doesn't exist" });
                  }else{
                      Users.findOne({where: {email: req.body.email}})
                      .then( u => {
-                         if(u != null){
-                             res.status(400).json({ message: "Email already exists" });
+                         if(u == null){
+                             res.status(400).json({ message: "Email doesn't exist" });
                          }else{
                              Users.update(obj, {where: {id: req.params.id}})
                              .then( rows => {
@@ -777,13 +818,14 @@ socket1.on("connect_error", (err) => {
 */
 io.on('connection', socket => {
     socket.use(authSocket);
- 
+    
     socket.on('comment', msg => {
-        Comments.create({ body: msg.text, userId: msg.userId, showId: msg.showId })
+        console.log(msg);
+        Comments.create({ text: msg.text, userId: msg.userId, showId: msg.showId })
             .then( rows => {
                 Comments.findOne({ where: { id: rows.id }, include: ['user'] })
                     .then( msg => io.emit('comment', JSON.stringify(msg)) ) 
-            }).catch( err => res.status(500).json(err) );
+            }).catch( err => socket.emit('error', err.message) );
     });
 
     socket.on('error', err => socket.emit('error', err.message) );
