@@ -13,7 +13,9 @@ module.exports = {
       //  Inače – zašto se nešto „obnavlja“ – zašto se ne bi radilo nešto novo? Umetnički razlozi bi morali biti jedini razlog novog života jedne već izvedene i igrane opere. Naše siromaštvo – činjenica da u fundusu imamo dekor i kostime – nikad ne smeju biti ključni razlozi „obnova“, iako u našoj praksi toga ima. Svaka je „obnova“ opere za onog ko je to ikad radio – teži posao od pripreme novog dela! Paradoksalno, ali tačno! Zato se svakoj „obnovi“ mora prići sa istim ambicijama, brojem proba, radom, kao da smo na samom početku! O tome posebno moraju razmisliti uprave, direkcije. To je naravno, moje mišljenje. Svestan sam toga da će u pozorišnoj praksi prevladati mišljenje sa kojim ovde polemišem: za onog ko na scenu izlazi da prvi put peva – sve je novo.`,
       //   image: Buffer.from(fs.readFileSync('slike/adrijana.jpg')),
       //   poster: Buffer.from(fs.readFileSync('slike/adrijana_poster.jpg')),
-      // },
+      //    createdAt:'2022-09-07',
+      //    updatedAt: '2022-09-07'
+      // }
       // {
       //   name: 'AIDA',
       //   description:`CELESTE AIDA!
@@ -26,7 +28,10 @@ module.exports = {
       //   Potresna drama, ostvarena nezaboravnom zvučnom lepotom, muzičko-scensko delo u kojem je data sinteza italijanske operske romantike, Verdijeva Aida postala je i ostala jedno od najprivlačnijih dela velikog operskog repertoara. Celeste Aida!`,
       //   image: Buffer.from(fs.readFileSync('slike/aida.jpg')),
       //   poster: Buffer.from(fs.readFileSync('slike/aida_poster.jpg')),
-      //  },
+      //    createdAt:'2022-09-07',
+      //    updatedAt: '2022-09-07'
+      
+      //  }
       //  {
       //   name: 'ALEKSANDAR',
       //   description: `REČ AUTORA
@@ -36,7 +41,9 @@ module.exports = {
       //   „Pozorišne novine“, Beograd, oktobar 2011.`,
       //   image: Buffer.from(fs.readFileSync('slike/aleksandar.jpg')),
       //   poster: Buffer.from(fs.readFileSync('slike/aleksandar_poster.jpg')),
-      //  },
+      //    createdAt:'2022-09-07',
+      //    updatedAt: '2022-09-07'
+      //  }
       //  {
       //   name: 'ALISA',
       //   description: `REČ DRAMATURŠKINjE
@@ -45,7 +52,9 @@ module.exports = {
       //   Luis Kerol nas podseća da je sasvim u redu da ponekad provirimo izvan okvira. U svetu u kojem je sve besmisleno i u kojem se okviri, ionako, nameću stalno i sa svih strana, najbesmislenije je da ne probamo da se izbavimo. Biti oslobođen i osećati se dobro to su najskuplje stvari danas. A kako to da postignemo o tome govori ova predstava? Alisa je devojka koja ima maštu. To je ona zaboravljena moć koju mi guramo u stranu i nazivamo detinjastom, a ona je koristi kako bi upoznala i prihvatila sve delove sebe. Najvažnije je da budemo fer prema sebi. U protivnom, propadamo kroz zečiju rupu i ništa nema smisla. Budimo slobodni, ludi, veseli. Jer, to je fer.`,
       //   image: Buffer.from(fs.readFileSync('slike/alisa.jpg')),
       //   poster: Buffer.from(fs.readFileSync('slike/alisa_poster.jpg')),
-      //  },
+      //    createdAt:'2022-09-07',
+      //    updatedAt: '2022-09-07'
+      //  }
       //  {
       //   name: 'ANTIGONA',
       //   description: `O ANTIGONI
@@ -64,20 +73,21 @@ module.exports = {
       //   Marija Crnobori:  Svijet glume, Sterijino pozorje, Novi Sad 1991.`,
       //   image: Buffer.from(fs.readFileSync('slike/antigona.jpg')),
       //   poster: Buffer.from(fs.readFileSync('slike/antigona_poster.jpg')),
-      //  },
+      //    createdAt:'2022-09-07',
+      //    updatedAt: '2022-09-07'
+      //  }
       //  {
       //   name: "ATILA",
       //   description: `VERDIJEVA OPERA „ATILA”
       //   Atila, kralj Huna, vladao je od 434. do 453. Središte njegove države, koja se protezala od Danske do Panonije i od Rajne do Kaspijskog mora, bilo je u mađarskoj niziji, blizu grada Tokaja. Njegovu vrhovnu vlast priznavala su mnoga germanska i slovenska plemena, a povremeno i Vizantija. Godine 451. pokušao je da osvoji zapadnorimsku Galiju, ali je od vojskovođe Ecija poražen na Katalunskim poljima. Sledeće godine pustoši Italiju, razara Akvileju, čiji stanovnici u bekstvu osnivaju na jadranskim lagunama Veneciju, i kreće da osvoji Rim. U susret mu je došao papa Lav I i Atila, po legendi, „preobraćen“, odustaje od osvajanja i rušenja prestonice i vraća se u Mađarsku. Ovaj susret ovekovečio je Rafaelo na svojoj poznatoj slici. Nemački romantičarski dramski pisac Zaharijas Verner (1786–1823) napisao je 1803. dramu Atila, kralj Huna, koja nosi sve osobine neobuzdane i preterane romantike. Sadržaj drame obrađuje poznati istorijski pohod Huna na Rim sredinom V veka, povinovanje Atile božanskoj zapovesti izrečenoj kroz usta pape Lava I, zatim uplitanje samog Atile u intrige protivnika i njegovo ubistvo od strane žene sa kojom je tek slavio svadbeni pir. 
-      //   Radnja je sa našeg, savremenog gledišta nelogična, konfuzna i nevešta, pa se više i ne pomišlja na izvođenje ovog dela. Ali zar slično ne važi i za drame, po mnogima, najvećeg francuskog pesnika Viktora Igoa (Ernani, Ruj Blaz, Lukrecija Bordžija)? Vernerov Atila sadrži, po ugledu na antičke tragedije, veliki broj horova koji upravo zahtevaju muziku, odnosno opersko pevanje. O tome koliko je ovaj komad značio savremenicima, najbolje govori podatak da je čak Betoven ozbiljno pomišljao da napiše operu po njemu! Verdi je, sa libretistom Pijaveom, posle velikog uspeha sa Ernanijem, oduševljen sadržajem Vernerovog Atile i u velikoj žurbi, počeo rad na svojoj novoj operi u proleće 1844. On traži od libretiste „komad u tri čina sa prologom, s tim da se zavesa digne u trenutku kad Huni i narod u opustošenoj Akvileji pevaju snažne ubojite horove: narod se moli, a Huni prete“. „Prvi čin počinje u Rimu, a završava se scenom u kojoj Hildegonda upozorava da je piće u peharu otrovano, i za sebe traži zadovoljenje da svojom rukom kazni krivca“, nastavlja Verdi u opisu svojih želja i izražava bojazan da cenzura neće dozvoliti scensko prikazivanje susreta pape i „biča božjeg“ Atile. Verdi moli libretistu da dobro prouči spis gospođe De Stal O Nemačkoj, koji je celoj Evropi davao romantičnu viziju o prirodi jednostavnih, poštenih, pravednih i pomalo krvožednih naroda sa severa. 
-      //   Veliki broj lica iz drame sveden je u libretu na ukupno šest, od kojih su četiri glavna a dva epizodna. Burgundska princeza Hildegonda postala je kći akvilejskog gospodara – Odabela, Valter je postao vitez Foresto, a biskup i papa Leon javlja se samo u sceni susreta sa Atilom. Verdi i Pjave sa operom Dva Foskarija (po Bajronu) slave uspeh u Rimu u novembru 1844, a u februaru 1845. Verdi i libretista Temistokle Solera imaju uspeha u milanskoj Skali sa operom Jovanka Orleanka (po Šileru). U avgustu 1845, sa Alizirom, koju je poznati libretista Kamarano sklepao za Verdija po Volterovoj tragediji, uspeh sasvim izostaje i Verdi se odlučuje da promeni libretistu za Atilu, jer mu je uspeh upravo neophodan. Solera dobija zadatak da sve priredi i Verdi je oduševljen delovima libreta koje brzo komponuje. Premijera je predviđena za operu La Feniče u Veneciji, a izabrani su i najbolji pevači. Naslovnu ulogu pevaće bas Ignacio Marini, koji je pevao naslovnu ulogu u prvoj Verdijevoj operi Oberto; tenorsku ulogu poznati pevač Karlo Gvasko, jedinu žensku ulogu još poznatija Sofija Leve, a baritonsku ulogu vojskovođe Ecija, „stari zec“, Natale Konstantini. Ali i sa Atilom nije sve išlo prema planu: kada su Solerinu suprugu Terezu, poznatu pevačicu, ismejali u Skali, uvređeni Solera napušta Milano i odlazi u Madrid, kao bliski saradnik i savetnik španske kraljice Izabele, ne stigavši da završi poslednji čin libreta Atile, tako da se ovaj posao opet poverava odbačenom Pijaveu. Solera je smrtno uvređen kada je pročitao novu obradu „dela na koje je bio ne malo ponosan, i koje se preobratilo u parodiju“, ali u operskom svetu se na takve stvari ne gleda suviše ozbiljno. I tako libreto za Atilu nije ni bolji ni lošiji nego svaki libreto iz tog doba, pa mnoge nedoslednosti, da ne kažemo omaške u libretu, primamo kao normalne. 
-      //   Libreto nije ni zamišljen za čitanje, kao drama, već kao povod za komponovanje lepih i efikasnih arija, romansi i kabaleta, velikih finala sa horovima, i svaki je slušalac znao na kojem mestu opere koji pevač dobija određenu ariju ili duet. U doba nacionalnog preporoda Italije, tokom godina borbi za ujedinjenje i oslobođenje, publika u svim operskim kućama Italije napeto je čekala da na neke stihove iz libreta spontano reaguje. U Atili, poziv Ecija Atili: „Ti celim svetom vladaj, ostavi meni Italijom da vladam sam“, publika prima i shvata kao poziv za isterivanje austrijskih okupatora i to operi garantuje neviđeni uspeh. Na premijeri, 17. marta 1846, uspeh je potpun i posle kratkog vremena Atila se prikazuje na svim scenama Italije, a već sledeće godine i u Kopenhagenu, Madridu i Lisabonu. Slede zatim London, Havana, Njujork, Bukurešt. Godine 1851. Beč, 1852. Budimpešta, 1853. Buenos Ajres, Rio de Žanejro i ostali operski svet, tako da je 1864. jedan komentator zaključio: „Verovatno ni sa kojom drugom operom Verdi nije imao toliko uspeha kao sa Atilom!“ Međutim, sa pojavom opera iz zrelijeg Verdijevog perioda, ova opera mladog majstora se sve manje izvodi i ubrzo je sasvim nestaje sa operskih scena. Tek u godinama posle Drugog svetskog rata počinje oprezna i gotovo bojažljiva „renesansa“ Atile, kako bi poslednjih nekoliko godina doživela prave trijumfe. Godine 1985. je hit sezone u veronskoj Areni, prikazuje se u Beču, Sofiji, Cirihu, Veneciji, Napulju i drugim gradovima, a optimistički se može poželeti da će se Atila pridružiti Nabuku, koji je, takođe, tek poslednjih decenija opet „u modi“. 
       //   Snažni ritmovi, čvršći, životniji, ubojitiji horovi od onih u Nabuku, zahvalne arije, efektni dueti i velike masovne scene sa mnogo pokreta, kao i brojne melodije koje se lako primaju, majstorstvo u zanatskom pogledu – to su odlike koje mogu privući najširu publiku, zainteresovanu za veliki istorijski spektakl i lepe glasove. Atila počinje uvertirom, koja nije splet popularnih melodija iz opere, već mračni uvod u delo, baziran na motivu koji će pevati druidi predskazujući nesreću. Prolog sadrži ratničke horove koje sledi Odabelina kavatina (Dok tvoji divlji ratnici), izazovna amazonska arija, naporna i teška, ali uspela i efektna. Kabaleta sa horom je nova mogućnost sopranu da se prikaže. Duet Atile sa Eciom je pravo natpevavanje basa sa baritonom, i pravi je izazov za pevače. Uvodna muzika druge slike prologa tonski slika strahovito nevreme na laguni. Forestova kavatina i kabaleta (Zemljo draga) ne zaostaju za sličnim numerama iz opera tog vremena. Odabelina romansa u prvom činu zanimljiva je pre svega zbog finesa u instrumentaciji. Glas prate solo engleski rog, flauta, violončelo i harfa, što dovoljno svedoči o naporima mladog Verdija da izađe iz operskog šablona i traga za ličnim izrazom. U duetu Odabele sa Forestom sve je po oprobanoj šemi, ali, pri pomirenju mladog para, ne peva se u uobičajenim tercama i sekstama, već u unisonu, što ukazuje na nepokolebljivost njihovih namera. Scena u Atilinom ratnom logoru predstavlja novinu u dotadašnjem Verdijevom načinu izražavanja. To više nije opšte mesto, koje manje ili više odgovara svakoj operi, već muzički tanano uvođenje u scensku situaciju i radnju. Atilin san i, potom, pobedonosni ubojiti napev osvajaju svakog slušaoca. Ratnički hor u slavu Votana prekida nežni zvuk dečjeg hora, dajući prilike Verdiju za najveći mogući muzički kontrast uopšte. 
       //   Znamenita rečenica starca Leonea (papa Lav I) „Smrtni pred tobom beže, plaše se biča tvog. Sad stani! Ne smeš dalje, jer ovde vlada Bog“, pevana stentorskim glasom, nagoveštava buduću scenu sa Velikim inkvizitorom iz Don Karlosa. Moćni zahvalni ansambl na kraju prvog čina dovoljno svedoči o majstorstvu mladog Verdija. Arija Ecija na početku drugog čina je pravi biser za baritone i rado se peva. Gromki marš u finalu ovog čina teško da ima premca u operama toga doba. Igra sveštenica i njihova talasasta pesma pružaju neophodni kontrast i odmor. Veliki ansambl sa krajnostima u dinamici traži sjajan hor. Finale je bučan, efektan, zahvalan i naporan za sve soliste. Romansa Foresta (Za tebe, ja sam živeo) u trećem činu, po mnogim komentatorima, predstavlja najlepši deo cele opere i svakako spada među najzahvalnije arije mladog Verdija. Tercet soprana, tenora i baritona je lirska oaza, a majstorstvo autora u mešanju svadbenog hora sa rečitativima solista je nesporno. Završni finale je suviše jezgrovit; Atilino ubistvo je muzički neizražajno, tako da su mnogi režiseri u saradnji sa dirigentima predstave u ovu scenu čak ubacivali odlomke iz nekih drugih opera mladog Verdija, kako bi i završetak bio ubedljiviji i duži. Čini nam se da to ipak nije neophodno. U nastavljanju namere da našoj publici prikažemo što više opera velikana Đuzepa Verdija, posle Ernanija i Makbeta, Atila se upravo nameće, jer raspolažemo ansamblom koji ga može primerno izvesti.
       //   Konstantin Vinaver (1987)`,
       //   image: Buffer.from(fs.readFileSync('slike/atila.jpg')),
       //   poster: Buffer.from(fs.readFileSync('slike/atila_poster.jpg')),
-      //  },
+      //    createdAt:'2022-09-07',
+      //    updatedAt: '2022-09-07'
+      //  }
       //  {
       //   name: "BELA KAFA",
       //   description: `POPOVIĆEVA BELA KAFA
@@ -87,7 +97,9 @@ module.exports = {
       //   Radomir Putnik, Velika predstava, „Politika“, 4. januar 1991.`,
       //   image: Buffer.from(fs.readFileSync('slike/belakafa.jpg')),
       //   poster: Buffer.from(fs.readFileSync('slike/belakafa_poster.jpg')),
-      //  },
+      //    createdAt:'2022-09-07',
+      //    updatedAt: '2022-09-07'
+      //  }
       //  {
       //   name: "BIZARNO",
       //   description: `O DRAMI BIZARNO
@@ -101,7 +113,9 @@ module.exports = {
       //   Nikol Estvanik Tejlor), Fuga o smrti (o dramskom tekstu Bizarno) American Theatre Magazin, Njujork, februar 2010.`,
       //   image: Buffer.from(fs.readFileSync('slike/bizarno.jpg')),
       //   poster: Buffer.from(fs.readFileSync('slike/bizarno_poster.jpg')),
-      //  },
+      //    createdAt:'2022-09-07',
+      //    updatedAt: '2022-09-07'
+      //  }
       //  {
       //   name: "BOLIVUD",
       //   description: `REČ AUTORKE
@@ -109,7 +123,9 @@ module.exports = {
       //   O kra­ju post­ko­mu­ni­zma : U čud­no­va­tom sve­tu post­ko­mu­ni­zma, demo­kra­ti­ja je isto­vre­me­no i cilj kojem se teži i izgu­blje­ni obje­kat. Tako se 'deci komu­ni­zma' pogled u bolju buduć­nost otva­ra još samo iz neka­kve melan­ho­lič­ne per­spek­ti­ve.(…) U post­komu­ni­zmu pita­nje buduć­no­sti slo­vi kao pita­nje na koje je odgo­vor već dat. Ali ni pita­nje pro­šlo­sti više nema smi­sla. Od 'dece komu­ni­zma' ne oče­ku­je se da ima­ju sazre­lu svest o komu­ni­stič­koj pro­šlo­sti. Upra­vo sto­ga su pre­tvo­re­na u decu da se ne bi mogla seća­ti pro­šlo­sti. `,
       //   image: Buffer.from(fs.readFileSync('slike/bolivud.jpg')),
       //   poster: Buffer.from(fs.readFileSync('slike/bolivud_poster.jpg')),
-      //  },
+      //    createdAt:'2022-09-07',
+      //    updatedAt: '2022-09-07'
+      //  }
       //  {
       //   name: "DAMA S KAMELIJAMA",
       //   description: `DAMA S KAMELIJAMA
@@ -119,6 +135,8 @@ module.exports = {
       //   Konstantin Vinaver`,
       //   image: Buffer.from(fs.readFileSync('slike/dama.jpg')),
       //   poster: Buffer.from(fs.readFileSync('slike/dama_poster.jpg')),
+      //    createdAt:'2022-09-07',
+      //    updatedAt: '2022-09-07'
       //  }
     ], {});
     
