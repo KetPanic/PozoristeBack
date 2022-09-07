@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 */
 
-const staticMdl = express.static(path.join(__dorname, 'dist'));
+const staticMdl = express.static(path.join(__dirname, 'dist'));
 
 app.use(staticMdl);
 app.use(history({index: '/index.html'}));
